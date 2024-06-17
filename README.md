@@ -24,9 +24,9 @@ This is a webhook multiplexer service built using Flask and MongoDB. The service
 2. **Set up environment variables**:
   Create a .env file in the project root with the following content:
   ```bash
-  MONGO_URI=
-*MongoDB URL to be specified*
+  MONGO_URL
   ```
+*MongoDB URL to be specified*
 
 3.  **Run the MongoDB server**:
   ```bash
