@@ -41,3 +41,8 @@ This is a webhook multiplexer service built using Flask and MongoDB. The service
 5. **Access the API documentation**:
 
 On the browser navigate to http://localhost:5000/apidocs to view the interactive API documentation.
+
+6. **To run testcases**:
+   ```bash
+   $env:PYTHONPATH="file_path"
+   python -m pytest .\test.py
