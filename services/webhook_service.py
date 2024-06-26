@@ -131,15 +131,13 @@ class WebhookService:
             #             raise Exception(f"Endpoint {endpoint} returned status code {response.status}")
                         
             response = requests.post(endpoint, json=data)
-            # print("-------", response.data)
+            
             if response.status_code != 200:
-                print("------I am here")
+                
                 raise Exception(f"Endpoint {endpoint} returned status code {response.status_code}")
             
         except Exception as e:
             raise Exception(f"Error forwarding to endpoint {endpoint}: {e}")
         
-    def count():
-        for i in range(5):
-            datetime.time.sleep(1)
+    
 
